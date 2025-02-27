@@ -4,9 +4,7 @@
 
 This repository implements the main steps for the generation of cardiac motion signatures and analysis of clinically relevant phenogroups. It transforms cardiac motion data derived from segmented MRIs into human-interpretable signatures.
 
-```
-![alt text](./data/flowchart.png)
-```
+<img src="./data/flowchart.png">
 
 ## Overview
 
