@@ -10,7 +10,7 @@ This repository implements the main steps for the generation of cardiac motion s
 
 The implementation is organised as follows:
 
-* Pre-processing of time windows of cardiac data and training of the convolution variational autoencoder - [code/cvae_snapshots.py]()
+* Pre-processing of time windows of cardiac data and training of the convolution variational autoencoder - [code/cvae_snapshots.py](code/cvae_snapshots.py)
 * Post-processing of temporal signatures and clustering (+ stability analysis) - [code/latent_space_clustering.py]()
 * Analysis of statistical enrichment of the phenogroups for demographics, biomarkers, cardiovascular risks and outcomes - [stat_enrichment.py]()
 * Generation of three-dimensional phenogroup motion patterns - [dynamism_4d.py]()
