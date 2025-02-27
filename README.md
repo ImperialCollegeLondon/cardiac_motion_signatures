@@ -1,5 +1,20 @@
-# Cardiac motion signatures in health and disease
+# Human interpretable signatures of three dimensional cardiac motion traits in health and disease
 
-**Abstract**
 
-Cardiac remodelling describes a spectrum of adaptations in response to stress that occur across physiological scales which are regulated by diverse molecular pathways. Optimising the understanding of how the heart adapts requires precise models of cardiac structure and function as well as efficient representations of high-dimensional motion trajectories. Here we use computer vision approaches to survey three-dimensional cardiac motion traits in 20,000 participants of UK Biobank. We used an autoencoder for dimensionality reduction of spatiotemporal point clouds to derive a human-interpretable signature summarising variation in complex patterns of motion. We found six clusters of participants representing a novel classification of heterogenous motion phenotypes with differential enrichment of cardiovascular outcomes and genetic risk. Low dimensional representations of 3D motion are visualised as a simple spatial signature capturing deviation from an average state.  Discovering compact cardiac motion signatures of health and disease enables efficient classification of patient risk and predisposing polygenic factors.
+
+This repository implements the main steps for the generation of cardiac motion signatures and analysis of clinically relevant phenogroups. It transforms cardiac motion data derived from segmented MRIs into human-interpretable signatures.
+
+```
+![alt text](./data/flowchart.png)
+```
+
+## Overview
+
+The implementation is organised as follows:
+
+* Pre-processing of time windows of cardiac data and training of the convolution variational autoencoder - [code/cvae_snapshots.py]()
+* Post-processing of temporal signatures and clustering (+ stability analysis) - [code/latent_space_clustering.py]()
+* Analysis of statistical enrichment of the phenogroups for demographics, biomarkers, cardiovascular risks and outcomes - [stat_enrichment.py]()
+* Generation of three-dimensional phenogroup motion patterns - [dynamism_4d.py]()
+* Benchmark analysis when swapping time windows for MRI-derived features - [benchmark_data.py]()
+* Help modules in [utils/]()
