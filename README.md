@@ -15,4 +15,4 @@ The implementation is organised as follows:
 * Analysis of statistical enrichment of the phenogroups for demographics, biomarkers, cardiovascular risks and outcomes - [code/stat_enrichment.py](code/stat_enrichment.py)
 * Generation of three-dimensional phenogroup motion patterns - [code/dynamism_4d.py](code/dynamism_4d.py)
 * Benchmark analysis when swapping time windows for MRI-derived features - [codebenchmark_data.py](codebenchmark_data.py)
-* Help modules in [utils/](utils/)
+* Help modules in [code/utils/](code/utils/)
