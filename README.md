@@ -42,3 +42,9 @@ git clone https://github.com/your-repository/cardiac_motion_signatures.git
    ```
    conda activate your_env_name
    ```
+## Data Requirements
+The analysis pipeline requires cardiac point clouds derived from atlas-registered meshes. The cardiac atlas used for LV registration and motion tracking was developed by Bai et al. (2015) and Duan et al. (2019) and is not included in this repository due to data sharing agreements. The atlas is available upon reasonable request from the original authors. Please refer to: 
+- Bai W et al. "A bi-ventricular cardiac atlas built from 1000+ high resolution MR  images of healthy subjects and an analysis of shape and motion." *Medical Image  Analysis* 2015;26(1):133-145. [doi:10.1016/j.media.2015.08.009](https://doi.org/10.1016/j.media.2015.08.009)
+- Duan J et al. "Automatic 3D Bi-Ventricular Segmentation of Cardiac Images by a  Shape-Refined Multi-Task Deep Learning Approach." *IEEE Trans Med Imaging* 2019;38(9):2151-2164. [doi:10.1109/TMI.2019.2894322](https://doi.org/10.1109/TMI.2019.2894322)
+  
+UK Biobank imaging data are available to approved researchers via [UK Biobank](https://www.ukbiobank.ac.uk/).
